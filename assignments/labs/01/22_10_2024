@@ -1,0 +1,32 @@
+# Learning Goals for the Semester
+
+## To-Do List
+- [ ] Explore advanced data visualization techniques.
+- [ ] Learn about machine learning algorithms and their applications.
+- [ ] Understand the principles of data cleaning and preprocessing.
+- [ ] Investigate data ethics and its importance in data science.
+- [ ] Experiment with different data analysis tools (e.g., Pandas, NumPy).
+
+## Markdown Syntax Cheat Sheet
+
+| Syntax               | Description                             | Example                                   |
+|----------------------|-----------------------------------------|-------------------------------------------|
+| `# Heading 1`       | Largest heading                         | `# My Title`                             |
+| `## Heading 2`      | Subheading                             | `## My Subtitle`                         |
+| `- List Item`       | Unordered list                         | `- Item 1`                               |
+| `1. List Item`      | Ordered list                           | `1. First`                               |
+| `[Link](url)`       | Hyperlink                              | `[Google](https://www.google.com)`      |
+| `![Alt Text](url)`  | Image                                   | `![Image](https://example.com/image.png)` |
+| `**bold**`          | Bold text                              | `**Important**`                          |
+| `*italic*`          | Italic text                            | `*Emphasized*`                           |
+| `` `code` ``        | Inline code                            | `` `print("Hello World")` ``             |
+| ``` ```              | Code block                             | ```python                                 |
+|                      |                                         | print("Hello World")                     |
+|                      |                                         | ```                                      |
+
+## Inspiring Quote
+> "Data is the new oil." - Clive Humby
+
+## Python Code Snippet
+```python
+print("Hello World!")
