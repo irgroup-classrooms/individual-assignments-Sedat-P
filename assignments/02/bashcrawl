@@ -1,0 +1,168 @@
+palao@DESKTOP-NSG18D7 MINGW64 ~
+$ cd /c/Users/palao/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance
+$ ls
+cellar/  scroll
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance
+$ cd cellar
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+$ ls
+armoury/  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+$ pwd
+/c/Users/palao/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+$ cat scroll
+
+# Illusions are strong here.
+# It is difficult to tell what is a doorway and what is an object.
+#
+# The magic spell you use to look can be augmented.
+#
+# From now on, cast your spell like this:
+#
+# ls -F
+#
+# Directories (the rooms of these catacombs) end with a / symbol.
+#
+# Encounters (programs) end with a * symbol.
+#
+# You can avoid having to type `ls -F` every time by running the
+# following:
+#
+# alias ls='ls -F'
+#
+# This is known as a shell or command alias.  With this alias,
+# typing simply ls by itself will run ls -F. Try it out!
+#
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+$ ls
+armoury/  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar
+$ cd armoury
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ls
+chamber/  potion*  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ cat scroll
+
+# You can interact with items in the room (they end with a *)
+# by running them as a command (a shell script).
+#
+# For example, to collect treasure:
+#
+# ./treasure
+#
+# The . (dot) means *don't move*, and the name of the
+# script makes the code run.  This is known as a
+# relative path, and the . means the current room
+# (directory).
+#
+# You may have left treasure in the previous room.
+# Go back to a previous directory with two dots,
+# which means *take a step back*.
+#
+# EXAMPLE:
+#
+# cd ..
+
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ./treasure
+You have found a gleaming silver **sword**!  You marvel at
+its craftsmanship, and you recall tales from your childhood
+of the great mystic king Rannismir who bore such a sword to
+protect the kingdom from the undead.
+
+Add this item to your inventory:
+
+export I=sword,$I
+
+Remember, you can check your inventory:
+
+echo $I
+
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ls
+chamber/  potion*  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ^C
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ls
+chamber/  potion*  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ I=sword,$I
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ echo $I
+sword,
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ls
+chamber/  potion*  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ./potion
+You have found a potion bottle of swirling
+green liquid. Do you want to drink it?  y/n
+
+y
+The taste of a rustic green plant fills your mouth.  It
+warms and strengthens you.
+
+Create a variable for your health points (HP).  You have
+15HP:
+
+export HP=15
+
+You can check your health at any time:
+
+echo $HP
+
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ echo $HP
+
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ ls
+chamber/  potion*  scroll  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury
+$ cd chamber
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury/chamber
+$ ls
+scroll  spell*  statue*  treasure*
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance/cellar/armoury/chamber
+$ ./statue
+A rugged statue stands in the corner of the room.
+
+Do you approach it? y/n  y
+The statue springs to life, rumbling:
+
+WHO DARES INTRUDE UPON THE CHAMBER OF SPIRITS?
+
+It thrusts a fist at you, hitting you for 5 damage.
+
+You have been slain by the statue.
+
+GAME OVER!
+
+
+palao@DESKTOP-NSG18D7 MINGW64 ~/OneDrive/Desktop/bashcrawl-stable-2024.02.09/entrance
+$
