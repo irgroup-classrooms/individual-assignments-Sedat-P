@@ -1,7 +1,8 @@
 # Shell Lesson
 Git Bash mit einem bash script
 ```
-cd /c/Benutzer/palao/Desktop/test
+cd c/Users/palao/OneDrive/Desktop/test
+
 git init
 
 git checkout -b create-script
